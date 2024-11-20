@@ -241,7 +241,7 @@ function updateBackground() {
             paragraph.classList.add("day");
         }
         paragraph.textContent =
-            sentences[sentenceTime][Math.floor(Math.random() * 5 - 1)];
+            sentences[sentenceTime][Math.floor(Math.random() * 5)];
         document.body.appendChild(paragraph);
         console.log("done");
     }
