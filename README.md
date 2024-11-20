@@ -1,6 +1,6 @@
 # Analog clock
 
-This is a GitHub repository containing my solution to creating a analog clock only using HTML, CSS and JavaScript.
+This is a GitHub repository containing my solution to creating a analog clock only using HTML, CSS and JavaScript. I added a custom background that updates every hour.
 
 ## Criteria
 
