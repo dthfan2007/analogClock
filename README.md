@@ -5,7 +5,7 @@ This is a GitHub repository containing my solution to creating a analog clock on
 ## Criteria
 
 - Die Uhr hat drei Zeiger und zeigt die aktuelle Zeit korrekt an 🕰️
-  - Stundenzeiger 
+  - Stundenzeiger
   - Minutenzeiger
   - Sekundenzeiger
 - Der Sekundenzeiger ändert seine Position gemäss der aktuellen Zeit
