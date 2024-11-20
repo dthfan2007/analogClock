@@ -1,0 +1,128 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f0f0f0;
+    margin: 0;
+}
+
+.clock {
+    width: 60vw;
+    height: 60vw;
+    max-width: 300px;
+    max-height: 300px;
+    border: 0.5vw solid black;
+    border-radius: 50%;
+    position: relative;
+    padding: 5%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background: white;
+}
+
+.hand {
+    width: 50%;
+    background: black;
+    position: absolute;
+    top: 50%;
+    transform-origin: 85%;
+    transform: rotate(90deg);
+    transition: all 0.01s;
+    transition-timing-function: linear;
+}
+
+.hour-hand {
+    left: 22.75%;
+    z-index: 1;
+    height: 2%;
+    width: 35%;
+    background: black;
+}
+
+.min-hand {
+    left: 12.75%;
+    z-index: 2;
+    height: 1.25%;
+    width: 45%;
+    background: #6f6f6f;
+}
+
+.second-hand {
+    left: 8.25%;
+    z-index: 3;
+    height: 0.5%;
+    width: 49.5%;
+    background: red;
+}
+
+/*? Display the hour markings ?*/
+.marking {
+    position: absolute;
+    width: 2%;
+    height: 35%;
+    background: black;
+    top: 15%;
+    left: 49.25%;
+    transform-origin: center bottom;
+    border-radius: 2px;
+}
+
+.adjustMarking {
+    position: absolute;
+    width: 3%;
+    height: 27.5%;
+    background: white;
+    top: 22.5%;
+    left: 49%;
+    transform-origin: center bottom;
+    border-radius: 2px;
+}
+
+/*? Display the minute markings ?*/
+.minute-marking {
+    z-index: 0;
+    position: absolute;
+    width: 1%;
+    height: 34.5%;
+    background: gray;
+    top: 15.55%;
+    left: 49.5%;
+    transform-origin: center bottom;
+}
+
+.adjustMinuteMarking {
+    position: absolute;
+    width: 2.1%;
+    height: 32.5%;
+    background: white;
+    top: 17.5%;
+    left: 49.25%;
+    transform-origin: center bottom;
+    border-radius: 2px;
+}
+
+/*? Convert the fourth marking to a circle pinned to the middle ?*/
+.marking-four {
+    z-index: 4;
+    position: absolute;
+    width: 7%;
+    height: 7%;
+    background: black;
+    top: 46.5%;
+    left: 46.5%;
+    transform-origin: center;
+    border-radius: 50%;
+}
+
+/*? Disable display for the remaining markers ?*/
+.marking-three {
+    display: none;
+}
+
+.marking-two {
+    display: none;
+}
+
+.marking-one {
+    display: none;
+}
