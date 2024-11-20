@@ -5,7 +5,7 @@ const now = new Date();
 const hours = now.getHours();
 const body = document.querySelector("body");
 const paragraph = document.createElement("p");
-let check = 24;
+let check = hours;
 
 function setDate(initial = false) {
     const now = new Date();
@@ -61,6 +61,7 @@ for (let i = 0; i < 60; i++) {
 function updateBackground() {
     const present = new Date();
     let h = present.getHours();
+    console.log(h, check);
     let sentences = [
         [
             "The night is still young, but tomorrow is already waiting.",
@@ -230,7 +231,7 @@ function updateBackground() {
             "11 PM – reflect on today and look forward to the next chapter.",
         ],
     ];
-    let sentenceTime = h - 1;
+    let sentenceTime = h;
     if (sentenceTime < 0) {
         sentenceTime = 23;
     }
@@ -347,7 +348,8 @@ function updateBackground() {
     }
 
     check = h;
+    console.log(sentences[sentenceTime][Math.floor(Math.random() * 5)]);
 }
 
-updateBackground();
+updateBackground(check);
 setInterval(updateBackground, 1000);
